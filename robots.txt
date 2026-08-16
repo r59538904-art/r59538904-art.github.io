@@ -1,0 +1,6 @@
+# ドメイン直下に置くファイル。クローラーと Lighthouse はここだけを読む。
+# 公開しているのはブラウザ内で完結するツールで、集めている個人情報はない。
+User-agent: *
+Allow: /
+
+Sitemap: https://r59538904-art.github.io/sitemap.xml

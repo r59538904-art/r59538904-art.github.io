@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公開しているもの｜r59538904-art</title>
+<meta name="description" content="公開しているWebアプリの一覧です。">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314568b'/%3E%3Ctext x='16' y='23' font-size='19' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23fff'%3E%C2%A5%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://r59538904-art.github.io/">
+<style>
+/* 配色。既定は明るい方を書き、暗い方は2か所（端末の設定／明示指定）で上書きする */
+:root {
+  --bg: #f4f6f9; --surface: #ffffff; --line: #dde3ea;
+  --ink: #1a2430; --ink-2: #4a5766; --brand: #14568b; --brand-strong: #0e4270;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10161d; --surface: #19212b; --line: #2c3743;
+    --ink: #e6edf5; --ink-2: #a7b4c2; --brand: #6cb2ef; --brand-strong: #9ccbf7;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+  line-height: 1.85; font-size: 16px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+h1 { font-size: 1.25rem; margin: 0 0 6px; letter-spacing: .01em; }
+.sub { margin: 0 0 32px; color: var(--ink-2); font-size: .92rem; }
+.card {
+  display: block; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; padding: 20px 22px; text-decoration: none; color: inherit;
+  transition: border-color .15s, transform .15s;
+}
+.card:hover { border-color: var(--brand); transform: translateY(-1px); }
+.card:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+.card h2 { font-size: 1.05rem; margin: 0 0 8px; color: var(--brand-strong); }
+.card p { margin: 0 0 12px; font-size: .9rem; color: var(--ink-2); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags span {
+  font-size: .74rem; padding: 3px 9px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--ink-2);
+}
+footer { margin-top: 40px; font-size: .82rem; color: var(--ink-2); }
+footer a { color: var(--brand); }
+@media (max-width: 480px) { .wrap { padding: 32px 16px 48px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>公開しているもの</h1>
+  <p class="sub">ブラウザだけで動く、登録も送信も不要なツールです。</p>
+
+  <a class="card" href="/tax-scholarship-simulator/">
+    <h2>住民税・所得税・国保軽減・JASSO奨学金 判定シミュレーター</h2>
+    <p>収入と控除を入力すると、所得税と住民税（均等割・所得割）の課税額、国民健康保険料の軽減割合、JASSO給付奨学金・授業料等減免の支援区分が判定できます。結果はPDFに保存できます。</p>
+    <div class="tags">
+      <span>全国1,719市区町村の級地に対応</span>
+      <span>分離課税・繰越控除</span>
+      <span>入力内容は保存も送信もされません</span>
+    </div>
+  </a>
+
+  <footer>
+    <a href="https://github.com/r59538904-art?tab=repositories">GitHub のリポジトリ一覧</a>
+  </footer>
+</div>
+</body>
+</html>
